@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr"/>
+<head>
+<meta charset="utf-8"/>
+<title>"Formulaire2"</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<form method="post" action="traitement.php">
+  <fieldset class="Information">
+   <legend class="Information">Information</legend>
+<p>
+  <label for="civility">Civilité</label>
+  <select name="civility" id="civility"><br />
+  <optgroup label="genre">
+  <option value="Mr">Monsieur</option>
+  <option value="Mme">Madame</option>
+</optgroup>
+</select>
+</p>
+
+<label for="Name">Nom : </label>
+<input type="text" name="name" id="name"/><br/>
+<label for="surname">Prénom : </label>
+<input type="text" name="surname" id="surname"/><br/>
+<label for="Birthday">Date de naissance : </label>
+<input type="date" name="Birthday" id="Birthday"/><br/>
+<label for="Phone">Numéro de téléphone : </label>
+<input id="telNo" name="telNo" type="tel"
+       placeholder="01 23 45 67 89">
+<p>
+<label for="NumberAddress">Numéro :  </label>
+<input type="text" name="NumberAddress" id="NumberAddress"/>
+<label for="Street">Rue : </label>
+<input type="text" name="Street" id="Street"/>
+</p>
+<label for="Town">Ville : </label>
+<input type="text" name="Town" id="Town"/><br/>
+
+<p>
+    <label for="pseudo">Votre pseudo :</label>
+    <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Baloo" size="30" maxlength="10" />
+</p>
+<p>
+
+		<label >Mot de passe :</label> <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" size="22" maxlength="20" required/>
+		<input type="password" id="confirm_mdp" name="confirm_mdp" placeholder="Confirmation du mot de passe"/<br/>
+
+	</p>
+
+
+
+
+</form>
+</body>
+</html>
