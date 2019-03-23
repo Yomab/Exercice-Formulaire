@@ -1,57 +1,144 @@
 <!DOCTYPE html>
-<html lang="fr"/>
+<html lang="fr" />
+
 <head>
-<meta charset="utf-8"/>
-<title>"Formulaire2"</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <title>"Formulaire2"</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<form method="post" action="traitement.php">
+  <form method="post" action="traitement.php">
   <fieldset class="Information">
-   <legend class="Information">Information</legend>
-<p>
+  <legend class="Information"><strong>Information</strong></legend>
+
+  <p>
   <label for="civility">Civilité</label>
-  <select name="civility" id="civility"><br />
+  <select name="civility" id="civility">
   <optgroup label="genre">
   <option value="Mr">Monsieur</option>
   <option value="Mme">Madame</option>
-</optgroup>
-</select>
-</p>
+  </optgroup>
+  </select>
+  </p>
 
-<label for="Name">Nom : </label>
-<input type="text" name="name" id="name"/><br/>
-<label for="surname">Prénom : </label>
-<input type="text" name="surname" id="surname"/><br/>
-<label for="Birthday">Date de naissance : </label>
-<input type="date" name="Birthday" id="Birthday"/><br/>
-<label for="Phone">Numéro de téléphone : </label>
-<input id="telNo" name="telNo" type="tel"
-       placeholder="01 23 45 67 89">
-<p>
-<label for="NumberAddress">Numéro :  </label>
-<input type="text" name="NumberAddress" id="NumberAddress"/>
-<label for="Street">Rue : </label>
-<input type="text" name="Street" id="Street"/>
-</p>
-<label for="Town">Ville : </label>
-<input type="text" name="Town" id="Town"/><br/>
+  <label for="Name">Nom : </label>
+  <input type="text" name="name" id="name" /><br />
+  <label for="surname">Prénom : </label>
+  <input type="text" name="surname" id="surname" /><br />
+  <label for="Birthday">Date de naissance : </label>
+  <input type="date" name="Birthday" id="Birthday" /><br />
+  <label for="Phone">Numéro de téléphone : </label>
+  <input id="telNo" name="telNo" type="tel" placeholder="01 23 45 67 89">
 
-<p>
-    <label for="pseudo">Votre pseudo :</label>
-    <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Baloo" size="30" maxlength="10" />
-</p>
-<p>
+  <p>
+  <label for="NumberAddress">Numéro : </label>
+  <input type="text" name="NumberAddress" id="NumberAddress" />
+  <label for="Street">Rue : </label>
+  <input type="text" name="Street" id="Street" />
+  </p>
 
-		<label >Mot de passe :</label> <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" size="22" maxlength="20" required/>
-		<input type="password" id="confirm_mdp" name="confirm_mdp" placeholder="Confirmation du mot de passe"/<br/>
+  <label for="Town">Ville : </label>
+  <input type="text" name="Town" id="Town" /><br />
 
-	</p>
+  <p>
+  <label for="pseudo">Votre pseudo :</label>
+  <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Baloo" size="30" maxlength="10" />
+  </p>
 
+  <p>
+  <label>Mot de passe :</label> <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" size="22" maxlength="20" required />
+  <input type="password" id="confirm_mdp" name="confirm_mdp" placeholder="Confirmation du mot de passe"/ <br />
+  </p>
+  </fieldset>
 
+  <fieldset class="Compétences">
+  <legend class="Compétences"><strong>Compétences</strong></legend>
+  <p>
+  Quel est votre niveau en develloppement?<br />
+  <input type="radio" name="level" value="novice" id="novice" /> <label for="novice"><strong>Débutant</strong></label><br />
+  <input type="radio" name="level" value="junior" id="junior" /> <label for="junior"><strong>junior</strong></label><br />
+  <input type="radio" name="level" value="expert" id="expert" /> <label for="expert"><strong>expert</strong></label><br />
+  </p>
 
+  <p>
+  Quelles sont vos connaissances dans les languages suivants? <br />
+  <input type="checkbox" name="Ruby" id="Ruby" /> <label for="Ruby"><strong>Ruby</strong></label><br />
+  <input type="checkbox" name="Python" id="Python" /> <label for="Phyton"><strong>Phyton</strong></label><br />
+  <input type="checkbox" name="Php" id="Php" /> <label for="Php"><strong>Php</strong></label><br />
+  <input type="checkbox" name="Java" id="Java" /> <label for="Java"><strong>Java</strong></label><br />
+  <input type="checkbox" name="NodeJS" id="NodeJS" /> <label for="NodeJS"><strong>NodeJS</strong></label><br />
+  <input type="checkbox" name="ReactJS" id="ReactJS" /> <label for="ReactJS"><strong>ReactJS</strong></label><br />
+  <input type="checkbox" name="C#" id="C#" /> <label for="C#"><strong>C#</strong></label><br />
+  </p>
 
-</form>
-</body>
-</html>
+  <p>
+  <label for="OS">Lequels de ces <strong>OS</strong> utilisez vous ?</label><br />
+  <select name="OS" id="OS">
+  <optgroup label="Windows">
+  <option value="Windows 10">Windows 10</option>
+  <option value="Windows 8">Windows 8</option>
+  <option value="Windows 7">Windows 7</option>
+  </optgroup>
+  <optgroup label="Linux">
+  <option value="Ubuntu">Ubuntu</option>
+  <option value="Debian">Debian</option>
+  </optgroup>
+  <optgroup label="Autre">
+  <option value="Mac OS">Mac OS</option>
+  <option value="Chrome OS">Chrome OS</option>
+  <option value="Autre">Autre</option>
+  </optgroup>
+  </select>
+  </p>
+  </fieldset>
+
+  <fieldset class="Information">
+  <legend class="Formation"><strong>Formation</strong></legend>
+
+  <p class="fallbackLabel">Quel est le mois et l'année de votre entrée en formation?</p>
+  <div class="fallbackDatePicker">
+  <div>
+  <span>
+  <label for="month">Mois :</label>
+  <select id="month" name="month">
+  <option selected>Janvier</option>
+  <option>Février</option>
+  <option>Mars</option>
+  <option>Avril</option>
+  <option>Mai</option>
+  <option>Juin</option>
+  <option>Juillet</option>
+  <option>Août</option>
+  <option>Septembre</option>
+  <option>Octobre</option>
+  <option>Novembre</option>
+  <option>Décembre</option>
+  </select>
+  </span>
+
+  <span>
+  <label for="year">Année :</label>
+  <select id="year" name="year">
+  </select>
+  </span>
+  </div>
+  </div>
+
+  <p>
+  Indiquer votre URL <strong/>GITHUB</strong><br />
+  <input type="url" />
+  </p>
+
+  <p>
+  <label for="commentary">
+  Avez-vous un commentaire?</label><br />
+  <textarea name="commentary" id="commentary" rows="10" cols="50"></textarea>
+  </p>
+  </fieldset>
+  <input type="submit" value="Soumettre" />
+
+  </form>
+  </body>
+  </html>
