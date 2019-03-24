@@ -10,10 +10,13 @@
   <body>
 
   <form method="post" action="traitement.php">
+
+  <div id="Information"
   <fieldset class="Information">
   <legend class="Information"><strong>Information</strong></legend>
-  
+  </div>
 
+  <div id="Contact"
   <p>
   <label for="civility">Civilité</label>
   <select name="civility" id="civility">
@@ -23,7 +26,6 @@
   </optgroup>
   </select>
   </p>
-
   <label for="Name">Nom : </label>
   <input type="text" name="name" id="name" /><br />
   <label for="surname">Prénom : </label>
@@ -53,9 +55,14 @@
   <input type="password" id="confirm_mdp" name="confirm_mdp" placeholder="Confirmation du mot de passe"/ <br />
   </p>
   </fieldset>
+  </div>
 
+  <div id="Compétences"
   <fieldset class="Compétences">
   <legend class="Compétences"><strong>Compétences</strong></legend>
+  </div>
+
+  <div id="Level"
   <p>
   Quel est votre niveau en develloppement?<br />
   <input type="radio" name="level" value="novice" id="novice" /> <label for="novice"><strong>Débutant</strong></label><br />
@@ -94,10 +101,13 @@
   </select>
   </p>
   </fieldset>
+  </div>
 
+  <div id="Formation"
   <fieldset class="Formation">
   <legend class="Formation"><strong>Formation</strong></legend>
-
+  </div>
+  <div id="Parcours"
   <p class="fallbackLabel">Quel est le mois et l'année de votre entrée en formation?</p>
   <div class="fallbackDatePicker">
   <div>
@@ -138,6 +148,7 @@
   <textarea name="commentary" id="commentary" rows="10" cols="50"></textarea>
   </p>
   </fieldset>
+  </div>
   <input type="submit" value="Soumettre" />
 
   </form>

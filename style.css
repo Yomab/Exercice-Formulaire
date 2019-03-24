@@ -1,26 +1,42 @@
-body{
-background-color: #75cff2;
-
+#Information{
+font-size: 24px;
+background-color: #b92d54;
 }
 
-.Information{
+#Contact{
+border: 2px solid #b92d54;
+background-color: White;
 background-image: url(img.jpg);
 background-position: center;
-background-size: 1260px 413px;
+background-size: 1300px 420px;
 background-repeat: no-repeat;
 }
 
-.Compétences{
-background-color: white; 
+#Compétences{
+font-size: 24px;
+background-color: #0063dc;
+}
+
+#Level{
+
+border: 2px solid #0063dc;
+background-color: white;
 background-image: url(img2.jpg);
 background-position: center;
-background-size: 1000px 390px;
+background-size: 900px 300px;
 background-repeat: no-repeat;
 }
 
-.Formation{
+#Formation{
+font-size: 24px;
+background-color: #cb2027;
+}
+
+#Parcours{
+border: 2px solid  #cb2027;
+background-color: white;
 background-image: url(img3.jpg);
 background-position: center;
-background-size: 1267px 420px;
+background-size: 500px 200px;
 background-repeat: no-repeat;
 }
