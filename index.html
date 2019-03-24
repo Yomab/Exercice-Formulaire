@@ -11,63 +11,70 @@
 
   <form method="post" action="traitement.php">
 
+  <p>
   <div id="Information"
   <fieldset class="Information">
   <legend class="Information"><strong>Information</strong></legend>
   </div>
+  </p>
 
-  <div id="Contact"
+  <div id="Contact"</div>
+
   <p>
-  <label for="civility">Civilité</label>
-  <select name="civility" id="civility">
+  <label for="civility" id="name">Civilité</label><br />
+  <select name="civility" id="name">
   <optgroup label="genre">
   <option value="Mr">Monsieur</option>
   <option value="Mme">Madame</option>
   </optgroup>
   </select>
   </p>
-  <label for="Name">Nom : </label>
-  <input type="text" name="name" id="name" /><br />
-  <label for="surname">Prénom : </label>
-  <input type="text" name="surname" id="surname" /><br />
-  <label for="Birthday">Date de naissance : </label>
-  <input type="date" name="Birthday" id="Birthday" /><br />
-  <label for="Phone">Numéro de téléphone : </label>
-  <input id="telNo" name="telNo" type="tel" placeholder="01 23 45 67 89">
 
   <p>
-  <label for="NumberAddress">Numéro : </label>
-  <input type="text" name="NumberAddress" id="NumberAddress" />
-  <label for="Street">Rue : </label>
-  <input type="text" name="Street" id="Street" />
-  </p>
-
-  <label for="Town">Ville : </label>
-  <input type="text" name="Town" id="Town" /><br />
-
-  <p>
-  <label for="pseudo">Votre pseudo :</label>
-  <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Baloo" size="30" maxlength="10" />
+  <label for="Name" id="name" >Nom : </label>
+  <input type="text" name="name" id="name" placeholder="ex: Dupont"/> <br />
+  <label for="surname" id="name" >Prénom : </label>
+  <input id="name" name="surname" id="name" placeholder="ex: Alain"/> <br />
+  <label for="Birthday" id="name" >Date de naissance : </label>
+  <input type="date" name="Birthday" id="name"/> <br />
+  <label for="Phone" id="name" >Numéro de téléphone : </label>
+  <input id="name" name="telNo" type="tel" placeholder="esx: 01 23 45 67 89">
   </p>
 
   <p>
-  <label>Mot de passe :</label> <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" size="22" maxlength="20" required />
-  <input type="password" id="confirm_mdp" name="confirm_mdp" placeholder="Confirmation du mot de passe"/ <br />
+  <label for="NumberAddress" id="name">Numéro : </label>
+  <input type="text" name="NumberAddress" id="name" placeholder="ex: 23" />
+  <label for="Street" id"name" >Rue : </label>
+  <input type="text" name="Street" id="name" placeholder="ex: rue des bois" /><br/
+  <label for="Town" id="name">Ville : </label>
+  <input type="text" name="Town" id="name" placeholder="ex: Paris" /><br />
+  </p>
+
+  <p>
+  <label for="pseudo" id="name" >Votre pseudo :</label>
+  <input type="text" name="pseudo" id="name" placeholder="Ex : Baloo" size="30" maxlength="10" />
+  </p>
+
+  <p>
+  <label>Mot de passe :</label> <input type="password" id="name" name="mdp" placeholder="Votre mot de passe" size="22" maxlength="20" required />
+  <input type="password" id="name" name="confirm_mdp" placeholder="Confirmation du mot de passe"/ <br />
   </p>
   </fieldset>
   </div>
 
+  <p>
   <div id="Compétences"
   <fieldset class="Compétences">
   <legend class="Compétences"><strong>Compétences</strong></legend>
   </div>
+  </p>
 
-  <div id="Level"
+  <div id="Level">
   <p>
   Quel est votre niveau en develloppement?<br />
-  <input type="radio" name="level" value="novice" id="novice" /> <label for="novice"><strong>Débutant</strong></label><br />
-  <input type="radio" name="level" value="junior" id="junior" /> <label for="junior"><strong>junior</strong></label><br />
-  <input type="radio" name="level" value="expert" id="expert" /> <label for="expert"><strong>expert</strong></label><br />
+  <input type="radio" name="level" value="novice" id="name" /> <label for="novice"><strong>Débutant</strong></label><br />
+  <input type="radio" name="level" value="junior" id="name" /> <label for="junior"><strong>junior</strong></label><br />
+  <input type="radio" name="level" value="expert" id="name" /> <label for="expert"><strong>expert</strong></label><br />
   </p>
 
   <p>
@@ -82,7 +89,7 @@
   </p>
 
   <p>
-  <label for="OS">Lequels de ces <strong>OS</strong> utilisez vous ?</label><br />
+  Lequels de ces <strong>OS</strong> utilisez vous ?</label><br />
   <select name="OS" id="OS">
   <optgroup label="Windows">
   <option value="Windows 10">Windows 10</option>
@@ -103,15 +110,26 @@
   </fieldset>
   </div>
 
+  <p>
   <div id="Formation"
   <fieldset class="Formation">
   <legend class="Formation"><strong>Formation</strong></legend>
   </div>
-  <div id="Parcours"
-  <p class="fallbackLabel">Quel est le mois et l'année de votre entrée en formation?</p>
+  </p>
+
+  <p>
+  <div id="Parcours">
+  </p>
+
+  <p>
+  Quel est le mois et l'année de votre entrée en formation?<br />
+  </P>
+
+
   <div class="fallbackDatePicker">
   <div>
   <span>
+  <p>
   <label for="month">Mois :</label>
   <select id="month" name="month">
   <option selected>Janvier</option>
@@ -135,7 +153,7 @@
   </select>
   </span>
   </div>
-  </div>
+  </p>
 
   <p>
   Indiquer votre URL <strong/>"GitHub"</strong><br />
@@ -149,7 +167,12 @@
   </p>
   </fieldset>
   </div>
-  <input type="submit" value="Soumettre" />
+
+  <div>
+  <p>
+  <input type="submit" value="Soumettre" id="submit" />
+  </p>
+  </div>
 
   </form>
   </body>

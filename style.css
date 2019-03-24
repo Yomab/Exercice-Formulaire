@@ -1,3 +1,7 @@
+body{
+background: #a2c513
+}
+
 #Information{
 font-size: 24px;
 background-color: #b92d54;
@@ -10,6 +14,10 @@ background-image: url(img.jpg);
 background-position: center;
 background-size: 1300px 420px;
 background-repeat: no-repeat;
+}
+
+p{
+margin-left: 20px;
 }
 
 #Compétences{
@@ -39,4 +47,8 @@ background-image: url(img3.jpg);
 background-position: center;
 background-size: 500px 200px;
 background-repeat: no-repeat;
+}
+#submit{ 
+background-color: #007BFF;
+border: 1px solid #0063dc
 }
