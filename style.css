@@ -3,7 +3,7 @@ background-color: #75cff2;
 
 }
 
-#Renseignement{
+.Information{
 background-image: url(img.jpg);
 background-position: center;
 background-size: 1260px 413px;
@@ -11,7 +11,7 @@ background-repeat: no-repeat;
 }
 
 .Compétences{
-background-color: white;
+background-color: white; 
 background-image: url(img2.jpg);
 background-position: center;
 background-size: 1000px 390px;
