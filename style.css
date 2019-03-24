@@ -1,0 +1,26 @@
+body{
+background-color: #75cff2;
+
+}
+
+#Renseignement{
+background-image: url(img.jpg);
+background-position: center;
+background-size: 1260px 413px;
+background-repeat: no-repeat;
+}
+
+.Compétences{
+background-color: white;
+background-image: url(img2.jpg);
+background-position: center;
+background-size: 1000px 390px;
+background-repeat: no-repeat;
+}
+
+.Formation{
+background-image: url(img3.jpg);
+background-position: center;
+background-size: 1267px 420px;
+background-repeat: no-repeat;
+}
